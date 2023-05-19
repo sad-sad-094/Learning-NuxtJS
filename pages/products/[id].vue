@@ -3,9 +3,7 @@ E-mail: sadw621@gmail.com -->
 
 <template>
   <div>
-    <p>{{ product.title }}</p>
-    <p>{{ product.price }}</p>
-    <p>{{ product.id }}</p>
+    <ProductDetails :product="product" />
   </div>
 </template>
 
