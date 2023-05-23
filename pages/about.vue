@@ -9,18 +9,24 @@ E-mail: sadw621@gmail.com -->
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima recusandae quae illum ad quam consectetur
       perferendis maiores iusto facilis delectus ipsa facere commodi nostrum aspernatur, vero nemo magni neque inventore!
     </p>
+    <div>
+      <br>
+      {{ data }}
+    </div>
   </div>
 </template>
 
 <script setup>
-
+const { data } = await useFetch('/api/currency/GBP');
 </script>
 
-<style lang="scss" scoped>h2 {
+<style lang="scss" scoped>
+h2 {
   margin-bottom: 20px;
   font-size: 36px;
 }
 
 p {
   margin: 20px 0
-}</style>
+}
+</style>
