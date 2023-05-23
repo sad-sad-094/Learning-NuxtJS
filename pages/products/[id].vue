@@ -3,6 +3,12 @@ E-mail: sadw621@gmail.com -->
 
 <template>
   <div>
+    <Head>
+      <Title>
+        Nuxt Commerce | {{ product.title }}
+      </Title>
+      <Meta name="description" :content="product.description" />
+    </Head>
     <ProductDetails :product="product" />
   </div>
 </template>
